@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>结果页</title>
+</head>
+<body>
+ <h1>数字: <%= number %>的因素如下： 查询时间：<%= during %></h1>
+ <%
+ for(var i=0;i<resultsArr.length;i++){
+ %>
+ <li><%= resultsArr[i] %></li>
+ <%
+ }
+ %>
+</body>
+</html>

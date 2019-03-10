@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	</title>
+</head>
+<body>
+<form method="get">
+姓名：<input type="text" name="name">
+年龄：<input type="text" name="age">
+性别：<input type="text" name="sex">
+<input type="submit" name="" value="提交" class="submit">
+</form>
+<script type="text/javascript">
+	var oSubmit = document.getElementByCladd('submit')[0];
+		oSubmit.onclick = function(){
+			var xml=new XMLHttpRequest();
+			xml.open('get','get.js',true);
+			xml.onreadystatechange=function	(){
+				if(xml.readyState==4 ||xml.status==200){
+					var resTxt = xml.responseText;
+					document.innerhtml=responseText
+				}
+			}
+		}
+</script>
+</body>
+</html>

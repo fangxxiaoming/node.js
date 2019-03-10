@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>首页</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+ <h1>哈哈,index页面</h1>
+    
+    <div>
+      <input type="text" id="name" placeholder="姓名">
+   
+    </div>
+  <div>
+  <button type="submit" id="submit">查询</button>
+	</div>
+
+<script type="text/javascript">
+	var oSubmit = document.getElementById('submit');
+	var oNumber = document.getElementById('name');
+	oSubmit.onclick = function(){
+	var number= oNumber.value;
+		window.location.href="/"+number;
+	}
+</script>
+</body>
+</html>
